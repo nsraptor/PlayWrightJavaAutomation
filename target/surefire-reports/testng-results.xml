@@ -1,0 +1,2369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="35" passed="21" failed="14" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-26T20:20:45 GMT" name="Surefire suite" finished-at="2024-02-26T20:29:13 GMT" duration-ms="508497">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-02-26T20:20:45 GMT" name="Surefire test" finished-at="2024-02-26T20:29:13 GMT" duration-ms="508497">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:45 GMT" name="setUpClass" finished-at="2024-02-26T20:20:45 GMT" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@514cd540]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:45 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:50 GMT" duration-ms="5226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field specific icons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:50 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:52 GMT" duration-ms="2038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field specific icons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:52 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:54 GMT" duration-ms="1432" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field specific icons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='fa fa-phone']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='fa fa-phone']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.isVisibleImpl(FrameImpl.java:641)
+at com.microsoft.playwright.impl.FrameImpl.lambda$isVisible$29(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.isVisible(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LocatorImpl.isVisible(LocatorImpl.java:391)
+at com.microsoft.playwright.Locator.isVisible(Locator.java:3948)
+at com.test.roku.utils.AssertionUtils.assertPresent(AssertionUtils.java:10)
+at com.test.roku.steps.ContactUsPageAssertions.assertTextBoxIconDisplayed(ContactUsPageAssertions.java:114)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedIconNextToNameTextBox(ContactUsSteps.java:93)
+at ✽.User should be displayed "phone" next to relevant text box(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:8)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='fa fa-phone']") resolved to 2 elements:
+    1) <span class="fa fa-phone"></span> aka locator("div:nth-child(3) > .input-group-prepend > #basic-addon1 > .fa")
+    2) <span class="fa fa-phone"></span> aka locator("p").filter(new Locator.FilterOptions().setHasText("012345678901")).locator("span")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='fa fa-phone']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.isVisibleImpl(FrameImpl.java:641)
+at com.microsoft.playwright.impl.FrameImpl.lambda$isVisible$29(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.isVisible(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LocatorImpl.isVisible(LocatorImpl.java:391)
+at com.microsoft.playwright.Locator.isVisible(Locator.java:3948)
+at com.test.roku.utils.AssertionUtils.assertPresent(AssertionUtils.java:10)
+at com.test.roku.steps.ContactUsPageAssertions.assertTextBoxIconDisplayed(ContactUsPageAssertions.java:114)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedIconNextToNameTextBox(ContactUsSteps.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:54 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:55 GMT" duration-ms="1818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field specific icons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:57 GMT" duration-ms="1458" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the message filed caption"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='input-group-text']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='input-group-text']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.isVisibleImpl(FrameImpl.java:641)
+at com.microsoft.playwright.impl.FrameImpl.lambda$isVisible$29(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.isVisible(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LocatorImpl.isVisible(LocatorImpl.java:391)
+at com.microsoft.playwright.Locator.isVisible(Locator.java:3948)
+at com.test.roku.utils.AssertionUtils.assertPresent(AssertionUtils.java:10)
+at com.test.roku.steps.ContactUsPageAssertions.assertMessageBoxCaptionDisplayed(ContactUsPageAssertions.java:149)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedMessageCaptionNextToMessageTextArea(ContactUsSteps.java:103)
+at ✽.User should be displayed message caption next to message text area(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:18)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//span[@class='input-group-text']") resolved to 5 elements:
+    1) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").first()
+    2) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(1)
+    3) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(2)
+    4) <span id="basic-addon1" class="input-group-text">…</span> aka locator("#basic-addon1").nth(3)
+    5) <span class="input-group-text">Message</span> aka getByText("Message")
+
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/javascript.js:241:12)
+    at async /private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1113:14
+    at async ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:91:22)
+    at async FrameDispatcher.isVisible (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:233:14)
+    at async LongStandingScope._race (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:22)
+}
+Call log:
+-   checking visibility of locator("//span[@class='input-group-text']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.isVisibleImpl(FrameImpl.java:641)
+at com.microsoft.playwright.impl.FrameImpl.lambda$isVisible$29(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.isVisible(FrameImpl.java:627)
+at com.microsoft.playwright.impl.LocatorImpl.isVisible(LocatorImpl.java:391)
+at com.microsoft.playwright.Locator.isVisible(Locator.java:3948)
+at com.test.roku.utils.AssertionUtils.assertPresent(AssertionUtils.java:10)
+at com.test.roku.steps.ContactUsPageAssertions.assertMessageBoxCaptionDisplayed(ContactUsPageAssertions.java:149)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedMessageCaptionNextToMessageTextArea(ContactUsSteps.java:103)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:57 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:20:58 GMT" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field labels"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:20:58 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:00 GMT" duration-ms="1409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field labels"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:00 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:01 GMT" duration-ms="1382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field labels"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:01 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:02 GMT" duration-ms="1374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should be displayed the field labels"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:04 GMT" duration-ms="2138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user should be able to submit contact us form with valid successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:04 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:06 GMT" duration-ms="1955" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should see error message with invalid information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element Phone may not be blankSubject may not be blankName may not be blankMessage must be between 20 and 2000 characters.Message may not be blankSubject must be between 5 and 100 characters.Email may not be blankPhone must be between 11 and 21 characters. should be displayed !!! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element Phone may not be blankSubject may not be blankName may not be blankMessage must be between 20 and 2000 characters.Message may not be blankSubject must be between 5 and 100 characters.Email may not be blankPhone must be between 11 and 21 characters. should be displayed !!! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.test.roku.utils.AssertionUtils.assertPresent(AssertionUtils.java:10)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorMsgContainerDisplayed(ContactUsPageAssertions.java:58)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedErrorMessage(ContactUsSteps.java:58)
+at ✽.User should be displayed error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:06 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:21:38 GMT" duration-ms="32048" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Name : "@£$%^&*($%^&""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Name" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:60)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:21:38 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:22:10 GMT" duration-ms="31851" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Name : "123456789""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Name" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:60)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:22:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:22:42 GMT" duration-ms="31945" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Name : "!3654£!_$£%!""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Name" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:60)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:22:42 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:22:44 GMT" duration-ms="1771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "@missingUserName.com""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:22:44 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:22:46 GMT" duration-ms="2037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "missingAtDotCom""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:22:46 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:22:48 GMT" duration-ms="1545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "missingDomain@""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:22:48 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:19 GMT" duration-ms="31583" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "missingDotComFromDomain@c""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Email" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:71)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:19 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:21 GMT" duration-ms="1652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "missingCom@xyz.""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:21 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:22 GMT" duration-ms="1562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "invalidEmailMissingAt.com""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:22 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:24 GMT" duration-ms="1381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "spaces not@allowed.com""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:24 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:25 GMT" duration-ms="1517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Email : "double..dots@domain.com""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:25 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:23:57 GMT" duration-ms="31656" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "stringAsPhoneNumber""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:23:57 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:24:29 GMT" duration-ms="31860" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "stringWith42353254""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:24:29 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:25:01 GMT" duration-ms="31833" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "!@£$%^&*%^&*""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:25:01 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:25:33 GMT" duration-ms="31819" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "+76726374627642""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:25:33 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:27:59 GMT" duration-ms="146153" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "+76 726374627642""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:27:59 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:28:31 GMT" duration-ms="32067" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "564 792 007""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:28:31 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:03 GMT" duration-ms="32254" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit invalid Phone Number : "777-111-222""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at ✽.User should be displayed invalid "Phone" format error message(file:///Users/sanju/Desktop/PlaywightJavaWorkSpace/PlayWrightJavaAutomation/src/test/java/features/contactUs.feature:87)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/progress.js:87:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1399:23)
+    at Frame.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/frames.js:1056:17)
+    at FrameDispatcher.textContent (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/frameDispatcher.js:179:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/m8/d_ml1jqs5rdf6m9md2pykmkh0000gn/T/playwright-java-4336040391069677089/package/lib/server/dispatchers/dispatcher.js:362:39)
+}
+Call log:
+- waiting for locator(".alert")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5090)
+at com.test.roku.utils.AssertionUtils.assertEquals(AssertionUtils.java:15)
+at com.test.roku.steps.ContactUsPageAssertions.assertErrorDisplayedForInvalidFormat(ContactUsPageAssertions.java:168)
+at com.test.roku.steps.ContactUsSteps.userShouldBeDisplayedInvalidFormatErrorMessage(ContactUsSteps.java:141)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:03 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:05 GMT" duration-ms="1869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range Phone Number : "777""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:05 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:07 GMT" duration-ms="1654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range Phone Number : "777711112222333344445555""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:07 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:08 GMT" duration-ms="1583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range Subject : "qwe""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:08 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:10 GMT" duration-ms="1600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range Subject : "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:11 GMT" duration-ms="1527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range message : "lessThanTwenty""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:11 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-26T20:29:13 GMT" duration-ms="1696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user should not be able to submit out of range message : "MessageTextWithMoreThan2000CharactersopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmQRSTUVWXYZ""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to submit contact us request"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-02-26T20:29:13 GMT" name="tearDownClass" finished-at="2024-02-26T20:29:13 GMT" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
